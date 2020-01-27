@@ -1,0 +1,32 @@
+[
+	{
+		"Nickname": "Admin1",
+		"PowerUser": true,
+		"Password": "1234"
+	},
+	{
+		"Nickname": "Usuario1",
+		"PowerUser": false,
+		"Password": "1234"
+	},
+	{
+		"Nickname": "Admin2",
+		"PowerUser": true,
+		"Password": "9900"
+	},
+	{
+		"Nickname": "Usuario2",
+		"PowerUser": false,
+		"Password": "4321"
+	},
+	{
+		"Nickname": "Usuario3",
+		"PowerUser": false,
+		"Password": "0000"
+	},
+	{
+		"Nickname": "Usuario4",
+		"PowerUser": false,
+		"Password": "1234"
+	}
+]

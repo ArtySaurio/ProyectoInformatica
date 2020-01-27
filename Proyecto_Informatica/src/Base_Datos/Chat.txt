@@ -1,0 +1,2 @@
+Chats:(09:27:10.267) Usuario1 a Usuario2: Hola, que tal estas?
+(09:38:22.426) Usuario2 a Usuario1: Muy bien, gracias! :)

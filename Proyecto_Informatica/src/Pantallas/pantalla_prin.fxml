@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane fx:id="cuadro" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controladores.ControladorPrinc">
+   <children>
+      <Label fx:id="textologs" layoutX="179.0" layoutY="45.0" text="Temperatura">
+         <font>
+            <Font name="Cambria" size="20.0" />
+         </font>
+      </Label>
+      <Pane fx:id="cuadroazul" prefHeight="640.0" prefWidth="150.0" style="-fx-background-color: #8181F8;" />
+      <Button fx:id="botonchat" layoutY="490.0" mnemonicParsing="false" onAction="#sigchat" prefHeight="57.0" prefWidth="150.0" style="-fx-background-color: #8181F8;">
+         <graphic>
+            <ImageView fx:id="logochat" fitHeight="40.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Resources/secured_letter_50px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="botoncasa" layoutY="420.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="150.0" style="-fx-background-color: #8181F8;">
+         <graphic>
+            <ImageView fx:id="logocasa" fitHeight="40.0" fitWidth="42.0" opacity="0.65" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Resources/home_50px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="botonperf" layoutY="560.0" mnemonicParsing="false" onAction="#sigperf" prefHeight="57.0" prefWidth="150.0" style="-fx-background-color: #8181F8;">
+         <graphic>
+            <ImageView fitHeight="50.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Resources/user_50px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <ImageView fx:id="separador" fitHeight="89.0" fitWidth="65.0" layoutX="43.0" layoutY="330.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+         <image>
+            <Image url="@../Resources/thick_vertical_line_50px.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="textologs1" layoutX="179.0" layoutY="339.0" text="Ruido (dB)">
+         <font>
+            <Font name="Cambria" size="20.0" />
+         </font>
+      </Label>
+      <LineChart fx:id="graficotemp" layoutX="179.0" layoutY="97.0" prefHeight="199.0" prefWidth="815.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </LineChart>
+      <LineChart fx:id="graficodb" layoutX="179.0" layoutY="391.0" prefHeight="199.0" prefWidth="815.0">
+         <xAxis>
+            <CategoryAxis side="BOTTOM" />
+         </xAxis>
+         <yAxis>
+            <NumberAxis side="LEFT" />
+         </yAxis>
+      </LineChart>
+   </children>
+</AnchorPane>
