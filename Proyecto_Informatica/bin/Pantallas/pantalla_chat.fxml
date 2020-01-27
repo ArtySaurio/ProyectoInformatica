@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="cuadrogeneral" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controladores.ControladorChat">
+   <children>
+      <Pane fx:id="cuadroazul" prefHeight="640.0" prefWidth="150.0" style="-fx-background-color: #8181F8;" />
+      <Label fx:id="textodestinatario" layoutX="175.0" layoutY="221.0" prefHeight="22.0" prefWidth="100.0" text="Destinatario">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="textoremitente" layoutX="175.0" layoutY="176.0" prefHeight="22.0" prefWidth="85.0" text="Remitente">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="enviarmensaje" layoutX="175.0" layoutY="568.0" mnemonicParsing="false" onAction="#enviar" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #D0D0EF; -fx-background-radius: 5px; -fx-border-radius: 5px; -fx-border-color: #778899;" text="Enviar" />
+      <ChoiceBox fx:id="remitente" layoutX="294.0" layoutY="171.0" prefHeight="33.0" prefWidth="232.0" style="-fx-background-color: #FFFF; -fx-background-radius: 5px; -fx-border-radius: 5px; -fx-border-color: #BEBFC1;" />
+      <ChoiceBox fx:id="destinatario" layoutX="294.0" layoutY="216.0" prefHeight="33.0" prefWidth="232.0" style="-fx-background-radius: 5px; -fx-border-radius: 5px; -fx-background-color: #FFFF; -fx-border-color: #BEBFC1;" />
+      <TextField fx:id="mensaje" alignment="TOP_LEFT" layoutX="175.0" layoutY="268.0" prefHeight="277.0" prefWidth="359.0" />
+      <Label fx:id="bandejaentrada" layoutX="564.0" layoutY="74.0" prefHeight="44.0" prefWidth="359.0" text="Bandeja de entrada">
+         <font>
+            <Font name="Cambria Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="enviomensajes" layoutX="175.0" layoutY="74.0" prefHeight="44.0" prefWidth="359.0" text="Envio de mensajes">
+         <font>
+            <Font name="Cambria Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="entradamensajes" layoutX="564.0" layoutY="170.0" prefHeight="435.0" prefWidth="433.0" />
+      <Label fx:id="estatus" layoutX="321.0" layoutY="574.0" prefHeight="17.0" prefWidth="213.0" textFill="RED">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="botonrefresh" layoutX="950.0" layoutY="124.0" mnemonicParsing="false" onAction="#refresh" prefHeight="33.0" prefWidth="39.0" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fx:id="imgrefresh" fitHeight="33.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Resources/synchronize_50px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <ImageView fx:id="separador" fitHeight="89.0" fitWidth="65.0" layoutX="43.0" layoutY="330.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+         <image>
+            <Image url="@../Resources/thick_vertical_line_50px.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="botonperf" layoutY="560.0" mnemonicParsing="false" onAction="#sigperf" prefHeight="57.0" prefWidth="150.0" style="-fx-background-color: #8181F8;">
+         <graphic>
+            <ImageView fitHeight="50.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Resources/user_50px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="botoncasa" layoutY="420.0" mnemonicParsing="false" onAction="#sigcasa" prefHeight="57.0" prefWidth="150.0" style="-fx-background-color: #8181F8;">
+         <graphic>
+            <ImageView fx:id="logocasa" fitHeight="40.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Resources/home_50px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="botonchat" layoutY="490.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="150.0" style="-fx-background-color: #8181F8;">
+         <graphic>
+            <ImageView fx:id="logochat" fitHeight="40.0" fitWidth="42.0" opacity="0.65" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Resources/secured_letter_50px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

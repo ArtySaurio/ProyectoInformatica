@@ -1,0 +1,12 @@
+[
+	{
+		"nomcasa": "Casa1",
+		"direccion": "Calle los Yebenes 4, 1-G",
+		"propietario": "Usuario1"
+	},
+	{
+		"nomcasa": "Casa2",
+		"direccion": "Calle Madrid bajo D",
+		"propietario": "Usuario2"
+	}
+]
