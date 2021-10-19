@@ -10,7 +10,7 @@ Ante la comprensible preocupación de los dueños de casas de alquiler (tanto po
 
 Este proyecto se realizará a 3 meses vista (empezando desde su presentación el día 08/10/2019) con objetivo de crear una aplicación de escritorio con interfaz gráfica y con la sencillez adecuada para nuestros usuarios. Todo esto será posible gracias a la metodología scrum de organización y división de trabajo.
 
-?? ¡Danos una estrella si te ha interesado el proyecto!
+¡Danos una estrella si te ha interesado el proyecto!
 
 ## Componentes del grupo 
 
