@@ -1,5 +1,4 @@
 <h1 align="center">
-  <br>
    Proyecto de Informática 1
   <br>
 </h1>
