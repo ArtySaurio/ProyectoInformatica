@@ -1,7 +1,5 @@
 <h1 align="center">
   <br>
-  <a href=""><img width=50% src="https://github.com/ArtySaurio/ProyectoDeInformaticaI/blob/master/Recursos/WhatsApp%20Image%202019-09-20%20at%2020.30.49.png" alt="" width="200"></a>
-  <br>
    Proyecto de Informática 1
   <br>
 </h1>
